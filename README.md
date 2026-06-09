@@ -84,7 +84,7 @@ split-agent/
 ├── agent.js                     # orchestrator agent
 ├── watcher.js                   # autonomous mode: auto-settles on-chain
 ├── deploy.js                    # deploy & smoke test on testnet
-├── DEMO_SCRIPT.md               # English video-demo script
+├── demo/demo.mp4                # end-to-end demo video
 ├── .env.example
 ├── package.json
 └── README.md
@@ -238,25 +238,13 @@ calculateSplit([{ name: "Ann", paid: 0 }, { name: "Bea", paid: 100 }]);
 
 ---
 
-## 🎬 Demo video
+## 🎬 Demo
 
-A full English narration/screen script is in [`DEMO_SCRIPT.md`](./DEMO_SCRIPT.md) — a ~2.5 minute
-walkthrough covering the problem, the four skills, a live deploy, and an autonomous on-chain settlement.
+End-to-end demo video: **[`demo/demo.mp4`](./demo/demo.mp4)**.
 
----
-
-## 📤 How to submit on DoraHacks
-
-1. Push this repository to GitHub (public). Make sure `.env` is **not** committed (it's in `.gitignore`).
-2. Open the hackathon page on **DoraHacks** (Pharos — Skill-to-Agent Dual Cascade).
-3. Create/edit your BUIDL:
-   - **Name:** Split Agent
-   - **Description:** autonomous on-chain bill-splitting agent using escrow + x402.
-   - **Repository:** GitHub link.
-   - **Demo:** the recorded video (see `DEMO_SCRIPT.md`).
-   - **Deployed contract:** `0x51d45286653Ca652BE5087B5f127304bc9b93A2A` on Pharos Atlantic (see "Live deployment proof").
-4. List the **4 Skills** (Phase 1) and the **orchestrator + autonomous Agent** (Phase 2) as deliverables.
-5. Submit the BUIDL.
+It shows the full flow live on Pharos Atlantic — the agent parsing a sentence, computing the split,
+creating the on-chain group, auto-paying each debtor, and the autonomous watcher settling the group by
+itself (`🎉 Group settled on its own!`).
 
 ---
 
