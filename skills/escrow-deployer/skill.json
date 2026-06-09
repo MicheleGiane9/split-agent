@@ -1,0 +1,22 @@
+{
+  "name": "escrow-deployer",
+  "version": "1.0.0",
+  "description": "Compiles and deploys the escrow contract on Pharos (or reuses an existing one) and creates an on-chain split group, emitting the SplitCreated event. Supports native PHRS and ERC-20 (USDC).",
+  "entry": "skill.js",
+  "function": "deployEscrowAndCreateSplit",
+  "inputs": {
+    "wallet": "ethers.Wallet — agent signer",
+    "tokenAddress": "string (optional) — ERC-20 token address (USDC); ignored in native mode",
+    "transfers": "array of { fromAddress, toAddress, amountWei } — on-chain debts",
+    "durationSeconds": "number (optional) — payment deadline, default 86400",
+    "escrowAddress": "string (optional) — reuse an already-deployed contract",
+    "native": "boolean (optional) — true to use the native PHRS contract"
+  },
+  "outputs": {
+    "escrowAddress": "string — escrow contract address",
+    "splitId": "number — on-chain group ID",
+    "txHash": "string — creation transaction hash",
+    "abi": "array — contract ABI for the other skills"
+  },
+  "tags": ["escrow", "deploy", "solidity", "pharos", "evm"]
+}

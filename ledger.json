@@ -1,0 +1,61 @@
+[
+  {
+    "group": "João",
+    "description": "João",
+    "splitId": 4,
+    "escrowAddress": "0x51d45286653Ca652BE5087B5f127304bc9b93A2A",
+    "txHash": "0x738d3982ce5ec6b80ce0818fe550828418ed5ef6bda0979eadbd3ae04bbb64f3",
+    "blockNumber": 23844586,
+    "totalTransferred": "4000000000000000000",
+    "timestamp": 1781018025,
+    "isoDate": "2026-06-09T15:13:45.000Z",
+    "transfers": [
+      {
+        "from": "Ana",
+        "to": "João",
+        "amount": 2
+      },
+      {
+        "from": "Pedro",
+        "to": "João",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "group": "auto-settled-split-5",
+    "description": "",
+    "splitId": 5,
+    "escrowAddress": "0x51d45286653Ca652BE5087B5f127304bc9b93A2A",
+    "txHash": "0xff6e9460241d6be37925c6f124280aa3d59120a440d07e43ac83dbae866b9176",
+    "blockNumber": 23844879,
+    "totalTransferred": "4000000000000000000",
+    "timestamp": 1781018455,
+    "isoDate": "2026-06-09T15:20:55.000Z",
+    "transfers": []
+  },
+  {
+    "group": "auto-settled-split-6",
+    "description": "",
+    "splitId": 6,
+    "escrowAddress": "0x51d45286653Ca652BE5087B5f127304bc9b93A2A",
+    "txHash": "0x1d7cac10cc55e5d93439ac141756db42df4e7ace6784274355605380c5319d83",
+    "blockNumber": 23852837,
+    "totalTransferred": "4000000000000000000",
+    "timestamp": 1781030418,
+    "isoDate": "2026-06-09T18:40:18.000Z",
+    "transfers": []
+  },
+  {
+    "group": "auto-settled-split-7",
+    "description": "",
+    "splitId": 7,
+    "escrowAddress": "0x51d45286653Ca652BE5087B5f127304bc9b93A2A",
+    "txHash": "0x3b56425814d4200cf611b84f5f5a7a641f259a80cd708ab8bdf453c6019fc33f",
+    "blockNumber": 23853139,
+    "totalTransferred": "4000000000000000000",
+    "timestamp": 1781030872,
+    "isoDate": "2026-06-09T18:47:52.000Z",
+    "transfers": []
+  }
+]

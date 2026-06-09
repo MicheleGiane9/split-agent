@@ -1,0 +1,30 @@
+{
+  "name": "split-agent",
+  "version": "1.0.0",
+  "description": "Agente autônomo de divisão de contas on-chain (Splitwise on-chain) para a Pharos Network — Skill-to-Agent Dual Cascade Hackathon.",
+  "type": "module",
+  "main": "agent.js",
+  "scripts": {
+    "agent": "node agent.js",
+    "watch": "node watcher.js",
+    "deploy": "node deploy.js",
+    "test:calc": "node skills/split-calculator/skill.js"
+  },
+  "keywords": [
+    "pharos",
+    "blockchain",
+    "evm",
+    "x402",
+    "splitwise",
+    "escrow",
+    "agent",
+    "hackathon"
+  ],
+  "author": "Split Agent Team",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "solc": "^0.8.26"
+  }
+}

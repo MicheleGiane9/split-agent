@@ -1,0 +1,26 @@
+{
+  "name": "split-calculator",
+  "version": "1.0.0",
+  "description": "Computes the minimal list of transfers (who pays whom and how much) from how much each participant spent, using greedy transaction minimization.",
+  "entry": "skill.js",
+  "function": "calculateSplit",
+  "inputs": {
+    "participants": {
+      "type": "array",
+      "description": "List of participants with their spending.",
+      "items": {
+        "name": "string — participant name",
+        "paid": "number — how much the person actually paid",
+        "address": "string (optional) — wallet address"
+      },
+      "required": true
+    }
+  },
+  "outputs": {
+    "transfers": "array of { from, to, amount } — payments to execute",
+    "perPerson": "number — equal share per person",
+    "total": "number — total group spend",
+    "balances": "object — balance (positive receives / negative pays) per participant"
+  },
+  "tags": ["split", "finance", "algorithm", "pharos"]
+}

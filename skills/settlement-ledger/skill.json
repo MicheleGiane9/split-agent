@@ -1,0 +1,23 @@
+{
+  "name": "settlement-ledger",
+  "version": "1.0.0",
+  "description": "Settles the group on-chain (settle), records an immutable result (group, amounts, timestamp, hash) and allows public history queries via blockchain events.",
+  "entry": "skill.js",
+  "functions": {
+    "settleAndRecord": "settles the group and records the settlement",
+    "queryHistory": "queries the settlement history by reading on-chain events"
+  },
+  "inputs": {
+    "escrowAddress": "string — escrow contract address",
+    "escrowAbi": "array — contract ABI",
+    "wallet": "ethers.Wallet — signer that triggers the settlement",
+    "splitId": "number — group ID",
+    "meta": "object (optional) — { group, description, transfers }",
+    "ledgerPath": "string (optional) — local JSON history file"
+  },
+  "outputs": {
+    "record": "object — { group, splitId, txHash, totalTransferred, timestamp, isoDate }",
+    "history": "array — settlements read from the blockchain (queryHistory)"
+  },
+  "tags": ["ledger", "settlement", "history", "events", "pharos"]
+}

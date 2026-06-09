@@ -1,0 +1,22 @@
+{
+  "name": "auto-pay",
+  "version": "1.0.0",
+  "description": "Executes automatic payments in the spirit of Pharos's x402 protocol: checks balance, (ERC-20) approves the escrow, deposits the amount and retries with backoff on transient failure. Supports native PHRS and USDC.",
+  "entry": "skill.js",
+  "function": "executePayments",
+  "inputs": {
+    "escrowAddress": "string — escrow contract address",
+    "escrowAbi": "array — escrow contract ABI",
+    "tokenAddress": "string (optional) — ERC-20 token address (USDC); ignored in native mode",
+    "splitId": "number — on-chain group ID",
+    "jobs": "array of { debtIndex, signer, amountWei, fromName } — payments to execute",
+    "maxRetries": "number (optional) — max attempts per payment, default 3",
+    "native": "boolean (optional) — true to pay in native PHRS",
+    "log": "function (optional) — logging function"
+  },
+  "outputs": {
+    "results": "array — per-payment result (success, txHash, attempts, error)",
+    "allPaid": "boolean — true if all payments were confirmed"
+  },
+  "tags": ["payment", "x402", "pharos", "erc20", "retry"]
+}
