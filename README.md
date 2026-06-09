@@ -84,7 +84,6 @@ split-agent/
 ├── agent.js                     # orchestrator agent
 ├── watcher.js                   # autonomous mode: auto-settles on-chain
 ├── deploy.js                    # deploy & smoke test on testnet
-├── demo/demo.mp4                # end-to-end demo video
 ├── .env.example
 ├── package.json
 └── README.md
@@ -240,7 +239,9 @@ calculateSplit([{ name: "Ann", paid: 0 }, { name: "Bea", paid: 100 }]);
 
 ## 🎬 Demo
 
-End-to-end demo video: **[`demo/demo.mp4`](./demo/demo.mp4)**.
+[![Watch the Split Agent demo](https://img.youtube.com/vi/XEdvO2mlebI/maxresdefault.jpg)](https://youtu.be/XEdvO2mlebI)
+
+▶ **[Watch the full demo on YouTube](https://youtu.be/XEdvO2mlebI)**
 
 It shows the full flow live on Pharos Atlantic — the agent parsing a sentence, computing the split,
 creating the on-chain group, auto-paying each debtor, and the autonomous watcher settling the group by
@@ -253,7 +254,7 @@ itself (`🎉 Group settled on its own!`).
 - **ethers.js v6** — blockchain interaction
 - **solc** — Solidity compilation
 - **dotenv** — environment variables
-- **Solidity ^0.8.20** — `SplitEscrow.sol` (ERC-20) and `SplitEscrowNative.sol` (native PHRS)
+- **Solidity ^0.8.20** — `SplitEscrow.sol` (ERC-20) and `SplitEscrowNative.sol` (native PHRS).
 - No unnecessary dependencies.
 
 ---
